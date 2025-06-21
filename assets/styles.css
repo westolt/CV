@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+aside {
+  width: 20em;
+  padding: 2em;
+  background-color: #f0f0f0;
+  margin-right: 2em;
+}
+
+main {
+  flex-grow: 1;
+  max-width: 40em;
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+h1 {
+    font-family: Arial;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h3 {
+    font-family: sans-serif;
+    background-color: rgb(135, 174, 230);
+}
