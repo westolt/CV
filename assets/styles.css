@@ -5,9 +5,16 @@
 
 aside {
   width: 20em;
+  height: 100vh;
   padding: 2em;
-  background-color: #f0f0f0;
+  background-color: #4d4d4d;
+  color: aliceblue;
   margin-right: 2em;
+}
+
+aside a {
+  color: #b3deec;
+  text-decoration: none;
 }
 
 main {
@@ -23,7 +30,7 @@ h1 {
     padding-top: 1em;
 }
 
-h3 {
+h2 {
     font-family: sans-serif;
     background-color: rgb(135, 174, 230);
 }
