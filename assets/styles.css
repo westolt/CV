@@ -4,12 +4,11 @@ body {
 
 .container {
   display: flex;
-  align-items: flex-start;
+  min-height: 100vh;
 }
 
 aside {
   width: 20em;
-  height: 100vh;
   padding: 2em;
   background-color: #4d4d4d;
   color: aliceblue;
