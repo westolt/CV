@@ -1,5 +1,17 @@
 body {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 2rem;
 }
 
 .container {
@@ -9,10 +21,11 @@ body {
 
 aside {
   width: 20em;
-  padding: 2em;
-  background-color: #4d4d4d;
+  padding: 1.5rem;
+  background-color: #3d485f;
   color: aliceblue;
   margin-right: 2em;
+  border-radius: 1rem;
 }
 
 aside a {
@@ -20,38 +33,109 @@ aside a {
   text-decoration: none;
 }
 
+aside p {
+  font-size: large;
+}
+
+aside li {
+  font-size: large;
+}
+
+aside h2 {
+  background-color: #313a4d;
+}
+
+.side_sections {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 3px solid #4b5874;
+  border-radius: 1rem;
+  background-color: #313a4d;
+}
+
+.top_grid {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 3px solid #4b5874;
+  border-radius: 1rem;
+  background-color: #313a4d;
+}
+
+.top_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.top_row_down {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.top_grid strong {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 50%;
+  font-size: large;
+}
+
+.top_grid p {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
 main {
   flex-grow: 1;
   max-width: 40em;
-  line-height: 1.5;
-  padding: 4em 1em;
-}
+  line-height: 1.4;
 
-h1 {
-    font-family: Arial;
-    margin-top: 1em;
-    padding-top: 1em;
 }
 
 h2 {
+    color: white;
     font-family: sans-serif;
-    background-color: rgb(135, 174, 230);
+    background-color: #3d485f;
+    border-radius: 1rem;
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+main h2 {
+  padding-left: 1rem;
+}
 
-  aside {
-    width: 100%;
-    height: auto;
-    margin-right: 0;
-    padding: 1.5em;
-  }
+.it-skills-table {
+  width: 100%;
+  border: 1px solid #4b5874;
+  border-collapse: collapse;
+}
 
-  main {
-    max-width: 100%;
-    padding: 2em 1em;
+.it-skills-table td {
+  vertical-align: top;
+  border-top: 1px solid #4b5874;
+  padding-left: 5px;
+}
+
+.it-skills-table td.skillname {
+  border-right: 1px solid #4b5874;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body, .cv-container {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background-color: #f0f0f0 !important;
+  }
+  .cv-container {
+    border: 2px solid #333 !important;
+    height: auto !important;
+    page-break-inside: avoid;
   }
 }

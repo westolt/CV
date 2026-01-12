@@ -10,17 +10,58 @@
 <body>
   <div class="container">
     <aside>
-      <h1>William Erik Stolt</h1>
-      <img src="pictures/Naamakuva.jpg" alt="William Erik Stolt portrait" style="width: 250px;">
-      <p><strong>Nationality:</strong> Finnish</p>
-      <p><strong>Driving License:</strong> B</p>
-      <h1>Contact</h1>
-      <p>Email: williamstolt15@gmail.com</p>
-      <p><a href="https://www.linkedin.com/in/william-stolt-b36b8533b/">LinkedIn Profile</a></p>
-      <p><a href="https://github.com/westolt">GitHub Profile</a></p>
-      <h1>References:</h1>
-      <p>Jani Rusi — Grocery Department Manager at Prisma Olari</p>
-      <p>email: jani.rusi@sok.fi</p>
+      <div class="profile">
+        <h1>William Erik Stolt</h1>
+        <img src="pictures/Naamakuva.jpg" alt="William Erik Stolt portrait" style="width: 250px;">
+      </div>
+
+      <section class="top_grid">
+        <div class="top_row">
+          <strong>Nationality:</strong>
+          <p>Finnish</p>
+        </div>
+        <div class="top_row_down">
+          <strong>Driving License:</strong>
+          <p>B</p>
+        </div>
+      </section>
+
+      <section class="side_sections ">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> williamstolt15@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/william-stolt-b36b8533b/">https://www.linkedin.com/in/william-stolt-b36b8533b/</a></p>
+        <p>GitHub: <a href="https://github.com/westolt">https://github.com/westolt</a></p>
+      </section>
+
+      <section class="side_sections">
+        <h2>Language Skills</h2>
+        <ul>
+          <li>Finnish — Native</li>
+          <li>English — Fluent</li>
+        </ul>
+      </section>
+      
+      <section class="side_sections">
+        <h2>Professional Skills</h2>
+        <h3>Customer Service</h3>
+        <ul>
+          <li>Excellent (5+ years of experience)</li>
+        </ul>
+        <h3>Teamwork</h3>
+        <ul>
+          <li>Very good (Effective collaboration in diverse teams in both academic and professional settings)</li>
+        </ul>
+        <h3>Problem-Solving</h3>
+        <ul>
+          <li>Strong (skills developed through programming tasks and resolving challenging customer situations)</li>
+        </ul>
+      </section>
+
+      <section class="side_sections">
+        <h2>References:</h2>
+        <p>Jani Rusi — Grocery Department Manager at Prisma Olari</p>
+        <p>email: jani.rusi@sok.fi</p>
+      </section>
     </aside>
 
     <main>
@@ -66,87 +107,113 @@
         </ul>
       </section>
 
-       <section>
-        <h2>Language Skills</h2>
-        <ul>
-          <li>Finnish — Native</li>
-          <li>English — Fluent</li>
-        </ul>
-      </section>
-
-      <section>
+      <section class="it-skills-section">
         <h2>IT Skills</h2>
-        <ul>
-          <li>JavaScript + React — Good (Completed Full Stack Open; used in fullstack project)</li>
-          <li>Node.js — Good (Completed Full Stack Open; backend for personal project)</li>
-          <li>PostgreSQL — Good (Used in fullstack development with Sequelize)</li>
-          <li>Git & GitHub — Good (Daily use in school and personal projects)</li>
-          <li>Python — Good (Primary language in University of Helsinki coursework)</li>
-          <li>HTML, CSS — Intermediate</li>
-          <li>Linux (Ubuntu, Kali) — Proficient (Daily use on school laptop and desktop)</li>
-          <li>Windows — Proficient</li>
-          <li>Hardware — Good (Built and troubleshot multiple PCs; OS installation and configuration)</li>
-        </ul>
+        <table class="it-skills-table">
+          <tr>
+            <td class="skillname">JavaScript + React</td>
+            <td>Experienced (Built full-stack project Statcade)</td>
+          </tr>
+          <tr>
+            <td class="skillname">Node.js</td>
+            <td>Experienced (Completed Full Stack Open course covering Node.js, Express, REST APIs; used for personal full-stack project)</td>
+          </tr>
+          <tr>
+            <td class="skillname">PostgreSQL</td>
+            <td>Experienced (Database design and ORM with Sequelize)</td>
+          </tr>
+          <tr>
+            <td class="skillname">Git & GitHub</td>
+            <td>Daily use (Version control, collaboration, CI/CD workflows)</td>
+          </tr>
+          <tr>
+            <td class="skillname">HTML, CSS</td>
+            <td>Strong knowledge (Used in full-stack project development and in this CV)</td>
+          </tr>
+          <tr>
+            <td class="skillname">Python</td>
+            <td>Used in University coursework</td>
+          </tr>
+          <tr>
+            <td class="skillname">Linux (Ubuntu, Kali)</td>
+            <td>Proficient (Daily use for development and system management)</td>
+          </tr>
+          <tr>
+            <td class="skillname">Windows</td>
+            <td>Proficient (Daily use and troubleshooting multiple machines)</td>
+          </tr>
+          <tr>
+            <td class="skillname">Hardware</td>
+            <td>Experienced (Built and troubleshot multiple PCs, OS installation, configuration)</td>
+          </tr>
+        </table>
       </section>
 
       <section>
         <h2>Projects</h2>
         <ul>
-            <li>
-              <strong>Fullstack Arcade Project</strong>
-              <a href="https://github.com/westolt/Stoltcade.git">[GitHub]</a>
-              <ul>
-                  <li>Arcade-style web application called Stoltcade, where users can play minigames (currently 1 game)</li>
-                  <li><a href="https://backend-white-bush-6765.fly.dev/">[Live demo]</a></li>
-                  <li>Frontend: JavaScript + React</li>
-                  <li>Backend: Node.js + Express</li>
-                  <li>Database: PostgreSQL + Sequelize</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Shopping List App</strong>
-              <a href="https://github.com/westolt/shopping_list.git">[GitHub]</a>
-              <ul>
-                <li>Web app for creating and managing personal shopping lists; users can join others’ lists with a password</li>
-                <li>Built with Python, Flask, and SQLite</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Frog Game</strong>
-              <a href="https://github.com/westolt/frog-game.git">[GitHub]</a>
-              <ul>
-                <li>Simple game made with Pygame</li>
-              </ul>
-            </li>
+        <h3>Statcade — Full-Stack Web Arcade Platform</h3>
+
+        <p>
+          <strong>Live demo: </strong>
+          <a href="https://backend-white-bush-6765.fly.dev">
+            https://backend-white-bush-6765.fly.dev
+          </a></br>
+
+          <strong>GitHub: </strong>
+          <a href="https://backend-white-bush-6765.fly.dev">
+            https://github.com/westolt/Statcade
+          </a>
+        </p>
+
+            <ul>
+              <li>
+                Designed and implemented a full-stack arcade platform
+              </li>
+              <li>
+                Currently features a custom typing test game with real-time input validation and WPM calculation
+              </li>
+              <li>
+                Built end-to-end: frontend, backend, database, cloud services, CI, and deployment
+              </li>
+              <li>
+                Implemented user authentication and authorization using token-based login
+              </li>
+              <li>
+                Developed backend logic for highscores, statistics, and reward unlocking/equipping
+              </li>
+              <li>
+                Wrote unit, integration, and end-to-end tests; automated CI with GitHub Actions
+              </li>
+            </ul>
+
+            <p><strong>Technologies:</strong></p>
+            <ul>
+              <li>Frontend: React (Vite), JavaScript, CSS</li>
+              <li>Backend: Node.js, Express, REST APIs</li>
+              <li>Database: PostgreSQL, Sequelize</li>
+              <li>Cloud & DevOps: Fly.io, Neon, Cloudinary, GitHub Actions, Codecov</li>
+            </ul>
+
+            <p><strong>Project size:</strong> ~200 hours of independent development</p>
+
+            <h3>Shopping List App</h3>
+            <p>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/westolt/shopping_list">
+                https://github.com/westolt/shopping_list
+              </a>
+            </p>
+            <ul>
+              <li>
+                Web application for creating and managing shared shopping lists
+              </li>
+              <li>
+                Built with Python, Flask, and SQLite
+              </li>
+            </ul>
+        </section>
         </ul>
-      </section>
-
-      <section>
-        <h2>Professional Skills</h2>
-        <ul>
-          <li>Customer Service — Excellent (5+ years of experience)</li>
-          <li>Teamwork — Very good (Effective collaboration in diverse teams in both academic and professional settings)</li>
-          <li>Problem-Solving — Very good (Strong skills developed through programming tasks and resolving challenging customer situations)</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Personality</h2>
-        Flexible, positive, and self-motivated team player who is responsible, eager to learn and comfortable asking for help when needed.
-      </section>
-
-      <section>
-        <h2>Hobbies</h2>
-        <ul>
-          <li>Personal coding projects</li>
-          <li>Active gym-goer</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Achievements</h2>
-        Recognized as Employee of the Month for customer service at Prisma (Summer 2021).
-      </section>
   </div>
 </body>
 
